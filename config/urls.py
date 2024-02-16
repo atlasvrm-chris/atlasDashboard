@@ -24,7 +24,7 @@ urlpatterns = [
                   path("users/", include("hyper.users.urls", namespace="users")),
                   path("accounts/", include("allauth.urls")),
                   path("dashboard/", include("hyper.dashboard.urls", namespace="dashboard")),
-                  path("", view=TemplateView.as_view(template_name="login.html"), name="landing"),
+                  path("", view=TemplateView.as_view(template_name="landing.html"), name="landing"),
 
                   # Your stuff: custom urls includes go here
               ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
