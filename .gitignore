@@ -1,3 +1,4 @@
 /node_modules/
 /hyper/static_backup/
 /hyper/templates_backup/
+.pyc
